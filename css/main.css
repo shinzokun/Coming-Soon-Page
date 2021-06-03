@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+body div.Parent-container {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "Logo Ele" "Heading Subheading Ele" "Input Button Ele" "Illustration Ele" "Footer ELe";
+  place-items: center;
+}
+
+body div.Parent-container div.First-set {
+  grid-area: "Logo Ele";
+  padding-top: 60px;
+}
+
+body div.Parent-container div.First-set div.Logo-ele img.Logo-image {
+  width: 80px;
+}
+
+body div.Parent-container div.Second-set {
+  grid-area: "Heading Subheading Ele";
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body div.Parent-container div.Second-set div.Head-tag {
+  padding-top: 30px;
+}
+
+body div.Parent-container div.Second-set div.Head-tag h1.Head {
+  font-family: "Libre Franklin";
+  font-size: 45px;
+  font-weight: 300;
+  color: #969696;
+}
+
+body div.Parent-container div.Second-set div.Head-tag h1.Head span.Span-one {
+  font-weight: 700;
+  color: #151f29;
+}
+
+body div.Parent-container div.Second-set div.Sub-head {
+  padding-top: 10px;
+}
+
+body div.Parent-container div.Second-set div.Sub-head p.Sub-para {
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  font-size: 15px;
+  color: #969696;
+}
+
+body div.Parent-container div.Third-set {
+  grid-area: "Input Button Ele";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.Parent-container div.Third-set div.Input-field {
+  padding: 35px 0px;
+}
+
+body div.Parent-container div.Third-set div.Input-field input.Email-address {
+  height: 45px;
+  width: 450px;
+  border: 1px solid #c2d3ff;
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  color: #c2d3ff;
+  border-radius: 30px;
+  padding: 0px 20px;
+}
+
+body div.Parent-container div.Third-set div.Button-field {
+  padding: 35px 0px;
+  padding-left: 10px;
+}
+
+body div.Parent-container div.Third-set div.Button-field button.Notify-me {
+  height: 45px;
+  width: 150px;
+  border: none;
+  border-radius: 30px;
+  background-color: #4f7df3;
+  color: white;
+  font-size: 12px;
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  -webkit-box-shadow: -2px 3px 10px 2px #c2d3ff;
+          box-shadow: -2px 3px 10px 2px #c2d3ff;
+}
+
+body div.Parent-container div.Fourth-set {
+  grid-area: "Illustration Ele";
+}
+
+body div.Parent-container div.Fourth-set div.Illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.Parent-container div.Fourth-set div.Illustration img.Illustration-image {
+  width: 50%;
+}
+
+body div.Parent-container div.Fifth-set {
+  grid-area: "Footer Ele";
+}
+
+body div.Parent-container div.Fifth-set div.Socials-ele {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.Parent-container div.Fifth-set div.Socials-ele img.Same {
+  width: 20px;
+}
+
+body div.Parent-container div.Fifth-set div.Socials-ele img.Facebook-logo {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

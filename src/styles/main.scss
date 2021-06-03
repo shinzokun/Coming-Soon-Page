@@ -1,0 +1,190 @@
+// Util 
+
+    // Colors 
+        // Primary 
+        $blue: hsl(223, 87%, 63%);
+        $white: hsl(0, 0%, 100%);
+
+        // Secondary 
+        $pale_blue: hsl(223, 100%, 88%);
+        $light_red:  hsl(354, 100%, 66%);
+
+        // Neutral
+        $gray: hsl(0, 0%, 59%);
+        $dark_blue: hsl(209, 33%, 12%);
+
+    // Typorgraphy
+        // Font Size 
+        $size: 20px;
+
+        // Font 
+        $libre_franklin: 'Libre Franklin'; 
+            // 300, 600, 700
+
+// Main Styling
+    // All Selector Base
+    *
+    {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+    // Primary Base
+    body
+    {
+        div.Parent-container
+        {
+            background-color: $white;
+            height: 100vh;
+            width: 100vw;
+
+            display: grid;
+            grid-template-areas: 
+            "Logo Ele"
+            "Heading Subheading Ele"
+            "Input Button Ele"
+            "Illustration Ele"
+            "Footer ELe";
+
+            place-items: center;
+
+            div.First-set
+            {
+                grid-area: "Logo Ele";
+
+                padding-top: 60px;
+                
+                div.Logo-ele
+                {
+                    img.Logo-image
+                    {
+                        width: 80px;
+                    }
+                }
+            }
+
+            div.Second-set
+            {
+                grid-area: "Heading Subheading Ele";
+
+                display: grid;
+                place-items: center;
+
+                div.Head-tag
+                {
+                    padding-top: 30px;   
+                    
+                    h1.Head
+                    {
+                        font-family: $libre_franklin;
+                        font-size: 45px;
+                        font-weight: 300;
+                        color: $gray;
+
+                        span.Span-one
+                        {
+                            font-weight: 700;
+                            color: $dark_blue;
+                        }
+                    }
+                }
+
+                div.Sub-head
+                {
+                    padding-top: 10px;
+
+                    p.Sub-para
+                    {
+                        font-family: $libre_franklin;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: $gray;
+                    }
+                }
+            }
+
+            div.Third-set
+            {
+                grid-area: "Input Button Ele";
+
+                display: flex;
+
+                div.Input-field
+                {
+                    padding: 35px 0px;
+
+                    input.Email-address
+                    {
+                        height: 45px;
+                        width: 450px;
+                        border: 1px solid $pale_blue;
+                        font-family: $libre_franklin;
+                        font-weight: 600;
+                        color: $pale_blue;
+                        border-radius: 30px;
+                        padding: 0px 20px;
+                    }
+                }
+
+                div.Button-field
+                {
+                    padding: 35px 0px;
+                    padding-left: 10px;
+                    button.Notify-me
+                    {
+                        height: 45px;
+                        width: 150px;
+                        border: none;
+                        border-radius: 30px;
+                        background-color: $blue;
+                        color: $white;
+                        font-size: 12px;
+                        font-family: $libre_franklin;
+                        font-weight: 600;
+
+                        box-shadow: -2px 3px 10px 2px $pale_blue;
+                    }
+                }
+            }
+
+            div.Fourth-set
+            {
+                grid-area: "Illustration Ele";
+
+                div.Illustration
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img.Illustration-image
+                    {
+                        width: 50%;
+                    }
+                }
+            }
+
+            div.Fifth-set
+            {
+                grid-area: "Footer Ele";
+
+                div.Socials-ele
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img.Same
+                    {
+                        width: 20px;
+                    }
+
+                    img.Facebook-logo
+                    {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
